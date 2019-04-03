@@ -1,5 +1,13 @@
 package com.sfx.wisdomagriculture.comment;
 
+
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+
+@Data
+@Getter
+@Setter
 public class ResultBean {
 
     private static final boolean SUCCESS=true;
@@ -21,7 +29,7 @@ public class ResultBean {
         this.msg="操作成功";
     }
 
-    public ResultBean(boolean state, String msg) {
+    public ResultBean(String msg,boolean state) {
         this.state = state;
         this.msg = msg;
     }
@@ -41,7 +49,7 @@ public class ResultBean {
         this.data = data;
     }
 
-    public ResultBean(boolean state, String msg, Object data) {
+    public ResultBean( String msg, Object data,boolean state) {
         this.state = state;
         this.msg = msg;
         this.data = data;
