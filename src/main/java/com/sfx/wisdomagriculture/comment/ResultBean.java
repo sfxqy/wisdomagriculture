@@ -5,6 +5,10 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
+/**
+ * @author SFX
+ * 消息类：所有返回数据封装到该类
+ */
 @Data
 @Getter
 @Setter

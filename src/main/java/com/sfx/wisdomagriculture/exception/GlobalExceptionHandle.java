@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
  * @author SFX
  * 全局异常捕获
  */
+
 @ControllerAdvice
 public class GlobalExceptionHandle {
     private static Logger logger = LoggerFactory.getLogger(GlobalExceptionHandle.class);
